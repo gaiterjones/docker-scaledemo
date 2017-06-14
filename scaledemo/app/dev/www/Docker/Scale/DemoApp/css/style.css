@@ -1,0 +1,293 @@
+body {
+	 padding: 50px 0;
+	 font-size: 13px;
+	 font-family: "Overpass";
+	 font-style: normal;
+	 font-weight: 400;
+}
+
+ol, ul {
+	list-style: none;
+	margin-left: 25px;
+	margin-bottom: 15px;
+}
+
+p.weight1 {
+	 font-family: "Overpass";
+	 font-weight: 100;
+	 font-style: italic;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight2 {
+	 font-family: "Overpass";
+	 font-weight: 100;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight3 {
+	 font-family: "Overpass";
+	 font-weight: 200;
+	 font-style: italic;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight4 {
+	 font-family: "Overpass";
+	 font-weight: 200;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight5 {
+	 font-family: "Overpass";
+	 font-weight: 300;
+	 font-style: italic;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight6 {
+	 font-family: "Overpass";
+	 font-weight: 300;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight7 {
+	 font-family: "Overpass";
+	 font-weight: 400;
+	 font-style: italic;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight8 {
+	 font-family: "Overpass";
+	 font-weight: 400;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight9 {
+	 font-family: "Overpass";
+	 font-weight: 600;
+	 font-style: italic;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight10 {
+	 font-family: "Overpass";
+	 font-weight: 600;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight11 {
+	 font-family: "Overpass";
+	 font-weight: 700;
+	 font-style: italic;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight12 {
+	 font-family: "Overpass";
+	 font-weight: 700;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight13 {
+	 font-family: "Overpass";
+	 font-weight: 800;
+	 font-style: italic;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight14 {
+	 font-family: "Overpass";
+	 font-weight: 800;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight15 {
+	 font-family: "Overpass";
+	 font-weight: 900;
+	 font-style: italic;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+p.weight16 {
+	 font-family: "Overpass";
+	 font-weight: 900;
+	 font-style: normal;
+	 font-size: 36px;
+	 line-height: 30px;
+}
+
+div.wrapper {
+	 margin: 0 auto;
+	 display: block;
+	 white-space: nowrap;
+	 text-align: center;
+	 padding-bottom: 20px;
+	 min-height: 100%;
+	 width: auto;
+	 max-width: none;
+}
+
+div.footer {
+	 margin: 0 auto;
+	 display: block;
+	 white-space: nowrap;
+	 text-align: center;
+	 padding-bottom: 20px;
+	 padding-top: 50px;
+	 min-height: 100%;
+	 width: auto;
+	 max-width: none;
+}
+
+div.beancounter {
+    border: gray 1px;
+	max-width: 450px;
+    border-style: double;
+    margin-bottom: 15px;	
+}
+
+.copyleft {
+  display:inline-block;
+  padding-top: 3px;
+  transform: rotate(180deg);
+}
+
+div {
+	 text-align: left;
+	 display: inline-block;
+	 white-space: normal;
+	 vertical-align: top;
+	 -webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+	 box-sizing: border-box;
+	 padding: 0 2%;
+	 max-width: 760px;
+	 width: 760px;
+}
+
+h1 {
+	 font-size: 32px;
+	 line-height: 73px;
+}
+h2 {
+	 font-size: 20px;
+	 margin-bottom: 10px;
+
+}
+p {
+	 font-size: 17px;
+	 line-height: 26px;
+	 margin-bottom: 5px;
+}
+
+pre {
+	 margin-left: 25px;
+	 margin-bottom: 10px;
+}
+
+p.weights {
+	 letter-spacing: 2px;
+	 font-size: 13px;
+	 color: rgba(173,173,173,1);
+	 margin-bottom: 35px;
+	 border-width: 0px 0px 1px 0px;
+	 border-style: dotted;
+	 margin-top: 45px;
+}
+
+p.pullquote {
+	 font-size: 17px;
+	 line-height: 26px;
+	 margin-bottom: 35px;
+	 padding-left: 15px;
+	 border-width: 0px 0px 0px 3px;
+	 border-style: solid;
+}
+
+p.map {
+	 font-weight: 400;
+	 font-style: normal;
+	 margin-bottom: 0px;
+	 text-align: justify;
+	 font-size: 27px;
+	 line-height: 54px;
+	 margin-top: 0px;
+}
+
+p.heading {
+	 letter-spacing: 2px;
+	 font-size: 13px;
+	 margin-bottom: 35px;
+	 border-width: 0px 0px 1px 0px;
+	 border-style: dotted;
+	 margin-top: 45px;
+	 color: rgba(0,0,0,1);
+}
+
+p.intro {
+	 margin-bottom: 35px;
+	 font-size: 21px;
+	 line-height: 28px;
+}
+
+p.inverse-big {
+	 background-color: rgba(51,51,51,1);
+	 color: rgba(255,255,255,1);
+	 padding: 30px;
+	 margin-bottom: 0px;
+}
+
+p.inverse-med {
+	 background-color: rgba(51,51,51,1);
+	 color: rgba(255,255,255,1);
+	 padding: 30px;
+	 margin-bottom: 0px;
+	 padding-top: 0px;
+	 font-size: 15px;
+}
+
+p.inverse-small {
+	 padding-top: 0px;
+	 padding-left: 30px;
+	 padding-right: 30px;
+	 padding-bottom: 30px;
+	 background-color: rgba(51,51,51,1);
+	 color: rgba(255,255,255,1);
+	 font-size: 13px;
+}
+
+p.inverse-heading {
+	 background-color: rgba(51,51,51,1);
+	 color: rgba(255,255,255,1);
+	 padding: 30px;
+	 margin-bottom: 0px;
+	 padding-bottom: 0px;
+	 font-size: 15px;
+	 letter-spacing: 2px;
+	 margin-top: 50px;
+}
+

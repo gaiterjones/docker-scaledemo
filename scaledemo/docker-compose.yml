@@ -1,0 +1,66 @@
+# SCALEDEMO
+# 
+#
+version: "3"
+
+services:
+    manager:
+        build: ./manager/phusion
+        hostname: manager
+        domainname: "${DEMOAPPDOMAIN}"
+        volumes:
+            - "${CONTAINERDATA}/${PROJECT_NAME}/data:/home/data"
+            - "${MANAGERDEV}:/home/dev"
+            - /var/run/docker.sock:/var/run/docker.sock
+        networks:
+            - manager
+            - proxy
+        environment:
+            SCALE_MANAGER_PROJECTNAME: "${PROJECT_NAME}"
+            SCALE_CONTAINER_NAME: "${SCALE_CONTAINER_NAME}"
+            PROXY_NETWORK_NAME: "${PROXY_NETWORK_NAME}"
+    nginx:
+        build: ./nginx
+        hostname: nginx
+        domainname: "${DEMOAPPDOMAIN}"
+        networks:
+           - proxy
+        ports:
+          - 80:80
+          - 443:443
+        expose:
+            - 8081
+        restart: always
+    php-apache:
+        build: ./app/php7-apache/
+        domainname: "${DEMOAPPDOMAIN}"
+        expose:
+            - 80
+            - 443
+        volumes:
+            - "${DEMOAPPAPP}:/home/dev/Application"
+            - "${DEMOAPPLIB}:/home/dev/Library"
+            - "${DEMOAPPWWW}:/var/www/"
+            - "${DEMOAPPAUTOLOAD}:/var/www/autoload.php"
+        networks:
+            - wwwserver
+            - proxy
+        healthcheck:
+           test: ["CMD-SHELL", "curl -f -H 'Host: ${PROJECT_NAME}.${DEMOAPPDOMAIN}' http://127.0.0.1:80/healthcheck.php && echo 'OK'"]
+           interval: 1m
+           timeout: 10s
+           retries: 3
+        environment:
+            PROJECT_NAME: "${PROJECT_NAME}"
+            DEMOAPPDOMAIN: "${DEMOAPPDOMAIN}"
+    memcached:
+        image: memcached:latest
+        networks:
+            - wwwserver
+            - proxy
+        depends_on:
+            - manager
+networks:
+    manager:
+    proxy:
+    wwwserver:
